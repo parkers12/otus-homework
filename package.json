@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/parkers12/otus-homework#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
     "@types/jest": "^26.0.24",
+    "babel-jest": "^27.0.6",
     "jest": "^27.0.6"
   }
 }
