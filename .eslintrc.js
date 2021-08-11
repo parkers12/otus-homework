@@ -17,6 +17,8 @@ module.exports = {
         ignoreComments: true,
       },
     ],
+    "no-console": "off",
+    "no-alert": "off",
     "import/prefer-default-export": "off",
   },
 };
