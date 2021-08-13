@@ -7,7 +7,7 @@ export function getLarger(a, b) {
 }
 
 export function getMonth() {
-  const digit = prompt("Введите число от 1 до 12:");
+  const digit = +prompt("Введите число от 1 до 12:");
   if (digit > 0 && digit < 13) {
     const months = [
       "Январь",
