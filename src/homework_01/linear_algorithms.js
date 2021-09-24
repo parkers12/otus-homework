@@ -2,15 +2,8 @@ export function calculate(a, b) {
   console.log(a + b, a * b);
 }
 
-function toString(value) {
-  if (value !== "") {
-    return String(value);
-  }
-  return "";
-}
-
 export function getLenghtTwoString(a, b) {
-  console.log(toString(a).length + toString(b).length);
+  console.log(String(a).length + String(b).length);
 }
 
 export function getLengthString() {

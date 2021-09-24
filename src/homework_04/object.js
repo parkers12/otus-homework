@@ -2,7 +2,7 @@ export function getObject() {
   const user = {
     name: "John",
   };
-  user.age = +prompt("Введите число:");
+  user.age = Number(prompt("Введите число:"));
   console.log(user.age);
 }
 
@@ -11,18 +11,7 @@ export function getObjectAdmin() {
     name: "John",
     age: 25,
   };
-  const admin = {};
-  /*
-    for (let key in user) {
-        admin[key] = user[key];
-    }
-    */
-  // const admin = Object.assign({}, ...user);
-  const keys = Object.keys(user);
-  for (let i = 0; i < keys.length; i += 1) {
-    admin[i] = user[i];
-  }
-  admin.role = "admin";
+  const admin = { ...user, role: "admin" };
   console.log(admin.role);
 }
 

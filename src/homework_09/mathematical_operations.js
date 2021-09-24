@@ -1,13 +1,14 @@
 export function getTriangle(a, b, c) {
-  const res = Math.sqrt(a ** 2 + b ** 2);
-  if (res === c) {
+  const [sideA, sideB, sideC] = [a, b, c].sort((y, x) => y - x);
+  const res = Math.sqrt(sideA ** 2 + sideB ** 2);
+  if (res === sideC) {
     return true;
   }
   return false;
 }
 
 export function getCircle() {
-  const r = +prompt("Введите радиус круга:");
+  const r = Number(prompt("Введите радиус круга:"));
   if (r > 0) {
     const c = 2 * Math.PI * r;
     const s = Math.PI * r ** 2;
@@ -18,7 +19,7 @@ export function getCircle() {
 }
 
 function getDigital(value) {
-  return +value;
+  return Number(value);
 }
 
 export function getQuadraticEquation() {

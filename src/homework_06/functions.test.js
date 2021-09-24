@@ -3,15 +3,15 @@ import { getDiff, isWord, isPow } from "./functions";
 describe("getDiff", () => {
   const consoleSpy = jest.spyOn(console, "log");
   it("difference between 2 and 5", () => {
-    console.log(getDiff(2, 5));
+    getDiff(2, 5);
     expect(consoleSpy).toHaveBeenCalledWith(3);
   });
   it("difference between 4 and 2", () => {
-    console.log(getDiff(4, 2));
+    getDiff(4, 2);
     expect(consoleSpy).toHaveBeenCalledWith(2);
   });
   it("difference between 3 and 3", () => {
-    console.log(getDiff(3, 3));
+    getDiff(3, 3);
     expect(consoleSpy).toHaveBeenCalledWith(0);
   });
 });

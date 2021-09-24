@@ -7,7 +7,7 @@ export function getDiff(a, b) {
 }
 
 export function isWord(string) {
-  const sep = string.split(" ");
+  const sep = string.split(/[ ]/);
   if (sep.length > 1) {
     return false;
   }

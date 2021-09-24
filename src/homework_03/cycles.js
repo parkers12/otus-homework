@@ -13,7 +13,7 @@ export function getMultiplicationTable(value) {
 }
 
 export function getAverage() {
-  const digit = +prompt("Введите число:");
+  const digit = Number(prompt("Введите число:"));
   let sum = 0;
   let counter = 0;
   for (let i = 1; i <= digit; i += 2) {
