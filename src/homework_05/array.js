@@ -10,6 +10,5 @@ export function getNewArr(arr) {
 
 export function getArrMinMax(arr) {
   arr.sort((a, b) => a - b);
-  const [min, , , , , , , , , max] = arr;
-  console.log(min, max);
+  console.log(arr[0], arr[arr.length - 1]);
 }
