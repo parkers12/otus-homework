@@ -1,5 +1,5 @@
-import markup from "./dom";
-import { handleClick, handleChange } from "./functions";
+import markup from "./dom.js";
+import { handleClick, handleChange } from "./functions.js";
 
 export function startFunction() {
   markup();
